@@ -11,6 +11,9 @@ public class CarDTO {
     @NotBlank(message = "A cor é obrigatória.")
     private String color;
 
+    @NotBlank(message = "A id é obrigatória.")
+    private String id;
+
     // Getters e Setters
     public String getName() {
         return name;
@@ -28,4 +31,12 @@ public class CarDTO {
         this.color = color;
     }
 
+    public String getid() {
+        return id;
+
+    }
+
+    public void setid(String id) {
+        this.id = id;
+    }
 }
